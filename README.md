@@ -4,3 +4,4 @@
 - [ДЗ №3 - Underlay. ISIS](Lab3/)
 - [ДЗ №4 - Underlay. eBGP](Lab4/)
 - [ДЗ №5 - VxLAN. EVPN L2](Lab5/)
+- [ДЗ №6 - VxLAN. EVPN L3](Lab6/)
