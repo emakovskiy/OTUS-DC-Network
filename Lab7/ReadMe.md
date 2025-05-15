@@ -1305,3 +1305,49 @@ id: 77777 tunnelid: 0xa01006f encap: VXLAN
 ```
 </p>
   </details>
+
+#### Проверка отказоустойчивости, удаляем на стенде линк в сторону Leaf-2
+![topology7-2.jpg](topology7-2.jpg)
+
+#### Проверка с PC-1
+![PC1-2.jpg](PC1-2.jpg)
+#### Проверка с PC-2
+![PC2-2.jpg](PC2-2.jpg)
+#### Состояние портов на кастыле
+```
+Crutch#sh ip int brief
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     unassigned      YES unset  up                    up      
+GigabitEthernet0/1     unassigned      YES unset  administratively down down    
+GigabitEthernet0/2     unassigned      YES unset  up                    up      
+GigabitEthernet0/3     unassigned      YES unset  up                    up      
+GigabitEthernet1/0     unassigned      YES unset  up                    up      
+GigabitEthernet1/1     unassigned      YES unset  up                    up      
+GigabitEthernet1/2     unassigned      YES unset  up                    up      
+GigabitEthernet1/3     unassigned      YES unset  up                    up      
+Port-channel1          unassigned      YES unset  up                    up
+
+Crutch#sh etherchannel summary 
+Flags:  D - down        P - bundled in port-channel
+        I - stand-alone s - suspended
+        H - Hot-standby (LACP only)
+        R - Layer3      S - Layer2
+        U - in use      N - not in use, no aggregation
+        f - failed to allocate aggregator
+
+        M - not in use, minimum links not met
+        m - not in use, port not aggregated due to minimum links not met
+        u - unsuitable for bundling
+        w - waiting to be aggregated
+        d - default port
+
+        A - formed by Auto LAG
+
+
+Number of channel-groups in use: 1
+Number of aggregators:           1
+
+Group  Port-channel  Protocol    Ports
+------+-------------+-----------+-----------------------------------------------
+1      Po1(SU)         LACP      Gi0/0(P)    Gi0/1(D)
+```
