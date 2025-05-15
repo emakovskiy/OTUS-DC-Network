@@ -1,6 +1,6 @@
 ## Домашнее задание №7
 ### Тестовый стенд
-![Topology7.png](Topology7.png)
+![topology7.png](topology7.png)
 
 #### Underlay и Overlay построен на iBGP AS 65000
 
