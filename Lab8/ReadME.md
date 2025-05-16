@@ -1987,3 +1987,17 @@ Route Distinguisher: 10.1.0.4:5    (L3VNI 88888)
 ```
 </p>
   </details>
+
+#### Проверка доступности хостов
+#### Проверка с PC-1
+![PC1.jpg](PC1.jpg)
+#### Проверка с PC-2
+![PC2.jpg](PC2.jpg)
+#### Проверка с PC-3
+![PC3.jpg](PC3.jpg)
+#### Проверка с PC-4
+![PC4.jpg](PC4.jpg)
+#### Проверка с PC-5
+![PC5.jpg](PC5.jpg)
+#### Проверка с PC-6
+![PC6.jpg](PC6.jpg)
